@@ -33,3 +33,33 @@ A fejlődés következő lépése a tesztelés és a paraméterek optimalizálá
 A hatodik hónapban az összehasonlító tesztek kerülnek előtérbe. Az alkalmazott algoritmusok teljesítménye és eredményei mérésre kerülnek. A tesztelési fázis során különböző lábszámú ágensek (3, 5, 7) futnak, és a mozgás minőségét, alkalmazkodóképességét és stabilitását összehasonlítjuk. Az eredmények kiértékelése segít a megfelelő algoritmusok kiválasztásában, és új irányokat adhat a további fejlesztéshez.
 7. hónap – Szakdolgozat elkészítése és záró simítások
 A záró hónapban a kutatás és a fejlesztés eredményei dokumentálásra kerülnek a szakdolgozatban. A különböző algoritmusok és szimulációs eredmények részletes bemutatása mellett a dolgozatban a használt technológiák és azok alkalmazásának hatékonysága kerül kiértékelésre. A végső simítások elvégzése után a szakdolgozat beadásra kész lesz.
+
+
+## Folyamatábra, Használt források. 
+
+### Folyamatábra
+
+```mermaid
+graph TD
+A[Ágens felépítésének elkészítése]
+    A --> B[Ágens lábszámainak szerkeszthetőségének megvalósítása]
+    B --> C(Környezet Előkészítése)
+    C --> D[ML-Agents, Tensorflow.net ...]
+    C --> E[Akadályok, járást nehezítő tárgyak, Talaj]
+    D --> F[Kezdetleges Ágens séta]
+    E --> F --> G{Bugok javítása, súlyok, mozgáspontok, algoritmusok optimalizálása} --> |Rendben|H[Haladó Járás, Futás implementálása]
+    G --> |Hiba|G
+    H --> I[További Optimalizálások]
+    I --> J[Összehasonlítás elvégzése]
+    J --> K[Dokumentáció Készítése]
+    K --> L[Szakdolgozat Leadása]
+
+```
+
+
+### Források
+  - Blender - https://docs.blender.org/
+  - Unity - https://docs.unity.com/en-us
+  - ML-Agents package https://docs.unity3d.com/Packages/com.unity.ml-agents%401.0/manual/index.html
+  - Tensorflow.net - https://tensorflownet.readthedocs.io/en/latest/index.html
+  - Neural Networks - https://shaderfun.com/2024/04/06/neurons-part-1-a-basic-neural-network/
