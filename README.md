@@ -35,7 +35,7 @@ A hatodik hónapban az összehasonlító tesztek kerülnek előtérbe. Az alkalm
 A záró hónapban a kutatás és a fejlesztés eredményei dokumentálásra kerülnek a szakdolgozatban. A különböző algoritmusok és szimulációs eredmények részletes bemutatása mellett a dolgozatban a használt technológiák és azok alkalmazásának hatékonysága kerül kiértékelésre. A végső simítások elvégzése után a szakdolgozat beadásra kész lesz.
 
 
-## Folyamatábra, Használt források. 
+## Folyamatábra, Használt források, Könyvek
 
 ### Folyamatábra
 
@@ -44,13 +44,13 @@ graph TD
 A[Ágens felépítésének elkészítése]
     A --> B[Ágens lábszámainak szerkeszthetőségének megvalósítása]
     B --> C(Környezet Előkészítése)
-    C --> D[ML-Agents, Tensorflow.net ...]
+    C --> M[Megerősítéses tanulás] --> D[ML-Agents, Tensorflow.net ...]
     C --> E[Akadályok, járást nehezítő tárgyak, Talaj]
+    C --> N[Evoluciós Tanulás] --> D
     D --> F[Kezdetleges Ágens séta]
     E --> F --> G{Bugok javítása, súlyok, mozgáspontok, algoritmusok optimalizálása} --> |Rendben|H[Haladó Járás, Futás implementálása]
-    G --> |Hiba|G
-    H --> I[További Optimalizálások]
-    I --> J[Összehasonlítás elvégzése]
+    H --> |További Optimalizálások|G
+    H --> J[Összehasonlítás elvégzése]
     J --> K[Dokumentáció Készítése]
     K --> L[Szakdolgozat Leadása]
 
@@ -63,3 +63,12 @@ A[Ágens felépítésének elkészítése]
   - ML-Agents package https://docs.unity3d.com/Packages/com.unity.ml-agents%401.0/manual/index.html
   - Tensorflow.net - https://tensorflownet.readthedocs.io/en/latest/index.html
   - Neural Networks - https://shaderfun.com/2024/04/06/neurons-part-1-a-basic-neural-network/
+
+### Könyvek
+
+  - https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf
+  - http://ema.cri-info.cm/wp-content/uploads/2019/07/2019BurkovTheHundred-pageMachineLearning.pdf
+  - https://melaniemitchell.me/PapersContent/ARES1999.pdf
+  - https://www2.cs.uh.edu/~ceick/ai/EC_Intro.pdf
+  - https://nessie.ilab.sztaki.hu/~kornai/2020/AdvancedMachineLearning/Ng_MachineLearningYearning.pdf
+  - https://axon.cs.byu.edu/~martinez/classes/778/Papers/GP.pdf
